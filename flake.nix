@@ -16,6 +16,9 @@
         ./configuration.nix
         disko.nixosModules.disko
         ./disko.nix
+        {
+          nix.settings.experimental-features = [ "nix-command" "flakes" ];
+        }
       ];
     };
   };
