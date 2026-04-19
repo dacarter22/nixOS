@@ -14,6 +14,8 @@
 
   environment.systemPackages = with pkgs; [
     nano
+    vim
+    helix
     git
     curl
   ];
