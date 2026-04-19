@@ -16,8 +16,6 @@
     nano
     git
     curl
-    mount
-    touch
     discord
   ];
 
