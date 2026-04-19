@@ -18,6 +18,7 @@
     helix
     git
     curl
+    neo
   ];
 
   system.stateVersion = "25.11";
