@@ -18,7 +18,7 @@
     helix
     git
     curl
-    neo
+    neofetch
   ];
 
   system.stateVersion = "25.11";
