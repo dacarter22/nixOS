@@ -17,7 +17,6 @@
     git
     curl
     mount
-    finger
     touch
     discord
   ];
