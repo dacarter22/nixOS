@@ -16,7 +16,6 @@
     nano
     git
     curl
-    discord
   ];
 
   system.stateVersion = "25.11";
