@@ -19,6 +19,9 @@
     git
     curl
     neofetch
+    python3
+    python3Packages.pip
+    docker
   ];
 
   system.stateVersion = "25.11";
