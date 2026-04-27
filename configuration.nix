@@ -18,7 +18,6 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Audio (modern)
-  sound.enable = true;
   services.pipewire = {
     enable = true;
     pulse.enable = true;
