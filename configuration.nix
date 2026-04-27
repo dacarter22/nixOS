@@ -16,13 +16,7 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.gdm.wayland = false; # IMPORTANT for VM/NOS3
   services.xserver.desktopManager.gnome.enable = true;
-
-  # Audio (modern)
-  services.pipewire = {
-    enable = true;
-    pulse.enable = true;
-  };
-
+  
   # Docker
   virtualisation.docker.enable = true;
 
