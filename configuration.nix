@@ -11,7 +11,6 @@
 
   # VirtualBox guest support
   virtualisation.virtualbox.guest.enable = true;
-  virtualisation.virtualbox.guest.x11 = true;
 
   # Graphics / GUI
   services.xserver.enable = true;
