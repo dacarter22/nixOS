@@ -7,9 +7,11 @@
 
   time.timeZone = "America/NewYork";
 
+  virtualisation.docker.enable = true;
+
   users.users.user = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" ];
   };
 
   environment.systemPackages = with pkgs; [
