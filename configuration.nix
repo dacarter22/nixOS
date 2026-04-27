@@ -9,24 +9,28 @@
 
   time.timeZone = "America/New_York";
 
-  # Enable GUI
-  services.xserver.enable = true;
+  # VirtualBox guest support
+  virtualisation.virtualbox.guest.enable = true;
+  virtualisation.virtualbox.guest.x11 = true;
 
-  # GNOME
+  # Graphics / GUI
+  services.xserver.enable = true;
+  services.xserver.videoDrivers = [ "modesetting" ];
+
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.gdm.wayland = false; # IMPORTANT for VM/NOS3
+  services.xserver.displayManager.gdm.wayland = false;
   services.xserver.desktopManager.gnome.enable = true;
-  
+
+  hardware.graphics.enable = true;
+
   # Docker
   virtualisation.docker.enable = true;
 
-  # User
   users.users.user = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "docker" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" "vboxsf" ];
   };
 
-  # Packages
   environment.systemPackages = with pkgs; [
     nano
     vim
