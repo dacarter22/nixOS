@@ -24,6 +24,7 @@
     python3
     python3Packages.pip
     docker
+    make
   ];
 
   system.stateVersion = "25.11";
