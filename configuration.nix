@@ -18,7 +18,7 @@
 
   # Use LightDM instead of GDM (fixes crash in VirtualBox)
   services.xserver.displayManager.lightdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  services.desktopManager.gnome.enable = true;
 
   hardware.graphics.enable = true;
 
