@@ -16,8 +16,8 @@
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "modesetting" ];
 
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.displayManager.gdm.wayland = false;
+  # Use LightDM instead of GDM (fixes crash in VirtualBox)
+  services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
   hardware.graphics.enable = true;
